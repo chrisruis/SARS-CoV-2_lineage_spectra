@@ -12,7 +12,7 @@ The level of G-to-T mutations within a mutational spectrum has [been linked with
 
 This plot shows the proportion of G-to-T mutations amongst major SARS-CoV-2 lineages:
 
-<img src="./figures/G_T_03_10_2023_tree.png" width = "700">
+<img src="./figures/G_T_23_11_2023_tree.png" width = "700">
 
 The level of G-to-T mutations within recent dominant Omicron lineages has remained low, similar to early Omicron lineages. This supports recent Omicron lineages continuing to replicate predominantly within the upper respiratory tract.
 

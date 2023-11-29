@@ -264,7 +264,7 @@ if __name__ == "__main__":
     #Extract root nodes
     rnDict = dict()
     for eN in args.n:
-        rnDict[eN.split("____")[0]] = eN.split("____")[1]
+        rnDict[eN.split("____")[0]] = eN.split("____")[1] + ":"
     
     #Spectra dictionaries
     sDict = dict()
