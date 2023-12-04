@@ -6,17 +6,17 @@ This repository contains mutational spectra for SARS-CoV-2 lineages and analyses
 
 These analyses follow the paper [A lung-specific mutational signature enables inference of viral and bacterial respiratory niche](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.001018) and the associated repository [here](https://github.com/chrisruis/SARS-CoV-2_spectra)
 
-## G-to-T mutations
+## Analyses of emerging and recently dominant Omicron lineages
 
-The level of G-to-T mutations within a mutational spectrum has [been linked with the major replication niche(s) of SARS-CoV-2, other viruses and bacteria](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.001018). The level of G-to-T mutations may therefore help infer replication niches.
+The level of G-to-T mutations within a mutational spectrum has [been linked with the major replication niche(s) of SARS-CoV-2, other viruses and bacteria](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.001018). Viruses that replicate in the lung show higher levels of G-to-T mutations than viruses that replicate in the upper respiratory tract. Omicron replication is largely restricted to the upper respiratory tract so the major Omicron lineages BA.1, BA.2, BA.4 and BA.5 have lower levels of G-to-T mutations than the Alpha, Beta, Gamma and Delta variants which additionally replicate in the lung.
+
+We can therefore use the level of G-to-T mutations to help infer replication niches. In this repository, I calculate the level of G-to-T mutations in emerging SARS-CoV-2 lineages and compare this with earlier lineages.
 
 This plot shows the proportion of G-to-T mutations amongst major SARS-CoV-2 lineages:
 
 <img src="./figures/G_T_23_11_2023_tree.png" width = "700">
 
-The level of G-to-T mutations within recent dominant Omicron lineages has remained low, similar to early Omicron lineages. This supports recent Omicron lineages continuing to replicate predominantly within the upper respiratory tract.
-
-Note the confidence intervals for BA.2.86 are currently wide due to a small number of sampled mutations.
+The level of G-to-T mutations within emerging and recently dominant Omicron lineages has remained low, similar to early Omicron lineages. This supports recent Omicron lineages continuing to replicate predominantly within the upper respiratory tract.
 
 ## Current SARS-CoV-2 lineage spectra
 
