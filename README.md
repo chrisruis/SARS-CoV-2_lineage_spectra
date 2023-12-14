@@ -22,7 +22,7 @@ The level of G-to-T mutations within emerging and recently dominant Omicron line
 
 The mutational spectra for major SARS-CoV-2 lineages can be found in the [mutational_spectra directory](https://github.com/chrisruis/SARS-CoV-2_lineage_spectra/mutational_spectra).
 
-The Alpha, Beta, Gamma, Delta, BA.1, BA.2, BA.4 and BA.5 spectra were calculated in a [previous publication](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.001018). BA.2.12.1, BA.2.75, BQ.1, CH.1.1, XBB.1.5, XBB.1.9, XBB.2.3, XBB.1.16, EG.5.1 and DV.7.1 spectra were calculated from the 3rd October 2023 public SARS-CoV-2 UShER tree, which is available [here](http://hgdownload.soe.ucsc.edu/goldenPath/wuhCor1/UShER_SARS-CoV-2//) and can be viewed using Taxonium [here](https://taxonium.org/?backend=https://api.cov2tree.org). Due to their more recent emergence, GK.1.1, HK.3, GW.5 and BA.2.86 spectra were calculated from the 26th November 2023 UShER tree that also contains GISAID sequences to increase the number of mutations.
+The Alpha, Beta, Gamma, Delta, BA.1, BA.2, BA.4 and BA.5 spectra were calculated in a [previous publication](https://www.microbiologyresearch.org/content/journal/mgen/10.1099/mgen.0.001018). BA.2.12.1, BA.2.75, BQ.1, CH.1.1, XBB.1.5, XBB.1.9, XBB.2.3, XBB.1.16, EG.5.1 and DV.7.1 spectra were calculated from the 3rd October 2023 public SARS-CoV-2 UShER tree, which is available [here](http://hgdownload.soe.ucsc.edu/goldenPath/wuhCor1/UShER_SARS-CoV-2//) and can be viewed using Taxonium [here](https://taxonium.org/?backend=https://api.cov2tree.org). Due to their more recent emergence, spectra for GK.1.1, HK.3, GW.5 and BA.2.86 were calculated from the 26th November 2023 UShER tree that also contains GISAID sequences to increase the number of mutations.
 
 To calculate spectra from the UShER tree, I first extract sample paths from the tree using matUtils:
 ```
@@ -36,7 +36,7 @@ matUtils extract -i public-latest.all.masked.pb -C clade-paths
 
 After identifying the root nodes, spectra can be calculated for all lineages of interest simultaneously using the sample-paths file extracted above and the root node identifiers for the lineages. For example, to calculate spectra for the recent Omicron lineages in the 3rd October 2023 tree:
 ```
-python3 calculate_lineage_spectra.py -s sample-paths -n XBB.1.5____node_416633 XBB.1.16____node_341824 EG.5.1____node_361956 BA.2.86____node_465866 BA.2.75____node_436699 XBB.2.3____node_419687 BA.2.12.1____node_468123 BQ.1____node_544852 CH.1.1____node_442976 XBB.1.9____node_350841 -r wuhan-hu-1.fasta
+python3 calculate_lineage_spectra.py -s sample-paths -n XBB.1.5____node_416633 XBB.1.16____node_341824 EG.5.1____node_361956 BA.2.75____node_436699 XBB.2.3____node_419687 BA.2.12.1____node_468123 BQ.1____node_544852 CH.1.1____node_442976 XBB.1.9____node_350841 -r wuhan-hu-1.fasta
 ```
 This outputs the mutational spectrum for each lineage and a reference sequence for the lineage (the ancestral sequence at the root node of the lineage, used to rescale the spectrum below).
 
